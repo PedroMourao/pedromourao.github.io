@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Portugal Quest: e se Portugal fosse um jogo?</title>
+<meta name="description" content="1000 sítios reais em Portugal. Vai lá, faz check-in e a carta é tua. Grátis no Google Play.">
+<link rel="icon" href="icone.png">
+<style>
+  @font-face { font-family: "Instrument Serif"; src: url("serif.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Instrument Serif"; font-style: italic; src: url("serif-italico.ttf") format("truetype"); font-display: swap; }
+  :root {
+    --fundo: #FBF6E8; --cartao: #FFFDF6; --texto: #123A66; --suave: #4A6385; --linha: #E7DEC6;
+    --ouro-a: #E9CF6B; --ouro-b: #C9A227; --ouro-texto: #6B5312; --azul: #1D5FA8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fundo: #0B1D33; --cartao: #12284A; --texto: #F3ECD8; --suave: #A9B8CC; --linha: #24344F; --ouro-texto: #E3C55C; --azul: #5B8FCB; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--fundo); color: var(--texto);
+         font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: grid; place-items: center; padding: 24px 16px; }
+  main { width: 100%; max-width: 420px; text-align: center; }
+  .icone { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(11, 29, 51, .25); }
+  h1 { font: 400 2.6rem/1.05 "Instrument Serif", Georgia, serif; margin: 18px 0 4px; letter-spacing: .01em; text-wrap: balance; }
+  h1 em { color: var(--ouro-b); }
+  .gancho { font: italic 400 1.45rem/1.3 "Instrument Serif", Georgia, serif; color: var(--suave); margin: 0 0 22px; }
+  ul { list-style: none; padding: 0; margin: 0 0 26px; display: grid; gap: 10px; text-align: left; }
+  li { background: var(--cartao); border: 1px solid var(--linha); border-radius: 14px; padding: 12px 14px 12px 44px; position: relative; }
+  li::before { content: ""; position: absolute; left: 16px; top: 18px; width: 12px; height: 12px; transform: rotate(45deg);
+               background: linear-gradient(135deg, var(--ouro-a), var(--ouro-b)); border-radius: 2px; }
+  .botao { display: block; padding: 16px 20px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 1.08rem;
+           color: #0B1D33; background: linear-gradient(180deg, var(--ouro-a), var(--ouro-b)); box-shadow: 0 6px 18px rgba(201, 162, 39, .35); }
+  .botao:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+  .nota { font-size: .86rem; color: var(--suave); margin: 12px 0 0; }
+  footer { margin-top: 28px; font-size: .8rem; color: var(--suave); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icone" src="icone.png" alt="Ícone do Portugal Quest" width="112" height="112">
+  <h1>Portugal <em>Quest</em></h1>
+  <p class="gancho">E se Portugal fosse um jogo?</p>
+  <ul>
+    <li>1000 sítios reais, do Minho aos Açores e à Madeira.</li>
+    <li>Vai lá, faz check-in a 50 metros e a carta é tua.</li>
+    <li>Tira a foto e pendura-a no teu museu.</li>
+  </ul>
+  <a class="botao" href="https://play.google.com/store/apps/details?id=com.pedromourao.portugalquest&amp;referrer=utm_source%3Dinstagram%26utm_medium%3Dpaid%26utm_campaign%3Dv0_geral">Instalar grátis no Google Play</a>
+  <p class="nota">Para Android. Grátis, com anúncios e compras opcionais.</p>
+  <footer><a href="https://pedromourao.github.io/portugal-quest-privacy/">Política de privacidade</a></footer>
+</main>
+</body>
+</html>
